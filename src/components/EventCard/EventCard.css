@@ -1,0 +1,105 @@
+/* Metadatos de los eventos*/
+.event-meta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #888888;
+  margin: 6px 0;
+}
+
+.event-meta i {
+  font-size: 20px;
+  width: 20px;
+  color: white;
+}
+
+/* Botón favoritos */
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.favorite-btn.active {
+  color: red;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.15);
+}
+
+/* Tarjeta evento */
+.event-card {
+  background-color: #1a1a1a;
+  border-radius: 1.5rem;
+  padding: 16px 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  color: white;
+  width: 100%;
+}
+
+.event-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.event-card p {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin: 4px 0;
+}
+
+/* Wrapper imagen */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .image-wrapper img {
+    height: 160px;
+  }
+}
+
+
