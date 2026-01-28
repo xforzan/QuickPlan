@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #c7c7c7;
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container h2 {
+  text-align: center;
+  color: white;
+}
+
+
+/* Botones */
+.info-btn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  text-align: center;
+}
+
+
+
+.info-btn:hover {
+  background-color: #c7c7c7;
+  color: black;
+}
+
+
+.info-btn:active {
+  transform: scale(0.97);
+}
+
+/* Formularios */
+input {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 1rem;
+  padding: 10px 12px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus {
+  border-color: #777;
+}
+
+select {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 1rem;
+  padding: 10px 12px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  appearance: none;
+  padding-right: 40px;
+}
+
+select:focus {
+  border-color: #777;
+}
+
+select option {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/* Mensajes */
+.error-msg {
+  margin-top: 20px;
+  color: crimson;
+  text-align: center;
+}
+
+.empty-list {
+  text-align: center;
+}
+
+
