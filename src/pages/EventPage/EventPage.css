@@ -1,0 +1,21 @@
+/* Boton para volver a la página de inicio*/ 
+.back-btn {
+  width: fit-content;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 1rem;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+  text-align: center;
+}
+
+.back-btn:hover{
+  background-color: #c7c7c7;
+  color: black;
+}
+
+.back-btn:active {
+  transform: scale(0.97);
+}
