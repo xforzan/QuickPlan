@@ -1,0 +1,13 @@
+/* Lista de eventos */
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Responsive */
+@media (max-width: 360px) {
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+}
